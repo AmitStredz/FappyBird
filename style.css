@@ -1,0 +1,84 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(45, 53, 45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@font-face {
+    font-family: main_font;
+    src: url(main.TTF);
+}
+@font-face {
+    font-family: score;
+    src: url(score.otf);
+}
+@font-face {
+    font-family: live-score;
+    src: url(live-score.otf);
+}
+.container{
+    height: 600px;
+    width: 400px;
+    background-color: aqua;
+    position: relative;
+    overflow: hidden; https://github.com/AmitStredz/FappyBird.git
+}
+
+.bird{
+    height: 30px;
+    width: 40px;
+    background-color: rgb(42, 43, 42);
+    position: absolute;
+    left: 50px;
+    bottom: 450px;
+}
+.topObstacle{
+    background-color: rgba(107, 106, 106, 0.947);
+    left: 400px;
+    bottom: 300px;
+    height: 300px;
+    width: 30px;
+    position: absolute;
+}
+.bottomObstacle{
+    bottom: 0;
+    left: 400px;
+    height: 300px;
+    width: 30px;
+    background-color: rgba(107, 106, 106, 0.947);
+    position: absolute;
+}
+.pop{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(40, 46, 45, 0.689);
+    position: absolute;   
+    z-index: 1;
+    margin: 200px 0px ;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    object-fit: contain;
+    padding-bottom: 20px;
+}
+h2{
+    font-family: main_font;
+    font-size: 3rem;
+}
+p{
+    font-size: 2rem;
+    font-family: score;
+    color: rgb(160, 165, 169);
+}
+h3{
+    padding-left: 20px;
+    font-family: live-score;
+    display: flex;
+    z-index: 1;
+    position: absolute;
+}
