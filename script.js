@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let gameTimerID = setInterval(startGame, 20) 
 
 
+    document.addEventListener('click', jump)
     document.addEventListener('keyup', jump)
 
     function jump() {
