@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function gameover() {
         console.log('Game...Over')
         document.removeEventListener('keyup', jump)
+        document.removeEventListener('click', jump)
         isGameOver = true
         // alert("Game Over...")
 
