@@ -22,9 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('click', jump)
     document.addEventListener('keyup', jump)
+    let jump_sound = new Audio('jumpy.mp3')
+    let over_sound = new Audio('over_sound.mp3')
 
     function jump() {
         if(birdBottom < 530) birdBottom += 50
+        jump_sound.currentTime = 0
+        jump_sound.play()
         bird.style.bottom = birdBottom + 'px'
     }
 
@@ -100,5 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
         para.textContent = "Score: " + count
         
         live_score.style.display = 'none'
+        over_sound.play()
     }
 })
